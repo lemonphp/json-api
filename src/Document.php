@@ -24,7 +24,7 @@ use LogicException;
 /**
  * Class Document
  *
- * @package JsonApi
+ * @package Lemon\JsonApi
  * @see     http://jsonapi.org/format/#document-structure
  */
 class Document implements JsonSerializable

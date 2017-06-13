@@ -13,7 +13,7 @@ namespace Lemon\JsonApi;
 /**
  * Class Utility
  *
- * @package JsonApi
+ * @package Lemon\JsonApi
  */
 class Utility
 {
@@ -23,12 +23,9 @@ class Utility
      */
     public static function arrayFilter(array $array)
     {
-        return (object) array_filter(
-            $array,
-            function ($v) {
-                return null !== $v;
-            }
-        );
+        return (object) array_filter($array, function ($v) {
+            return null !== $v;
+        });
     }
 
     /**
@@ -37,6 +34,7 @@ class Utility
      * @param $name
      * @return bool
      * @see http://jsonapi.org/format/#document-member-names
+     * @codeCoverageIgnore
      */
     public static function validMemberName($name)
     {

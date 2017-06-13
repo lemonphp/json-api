@@ -1,36 +1,32 @@
-lemonphp/json-api
-===
+# lemonphp/json-api
 
 [![Build Status](https://travis-ci.org/lemonphp/json-api.svg?branch=master)](https://travis-ci.org/lemonphp/json-api)
 [![Coverage Status](https://coveralls.io/repos/github/lemonphp/json-api/badge.svg?branch=master)](https://coveralls.io/github/lemonphp/json-api?branch=master)
 
 A PHP7 implement of [JSON API specification](http://jsonapi.org/)
 
-Requirements
----
+## Requirements
 
 * php >= 7.0
 
-Installation
----
+## Installation
 
 ```bash
 $ composer require lemonphp/json-api
 ```
 
-Usage
----
+## Usage
 
 Example code:
 
 ```php
 <?php
 
-use Lemon\JsonApi\Document\Resource\Relationship\Relationship;
+use Lemon\JsonApi\Document;
 use Lemon\JsonApi\Document\Resource\Relationship\Linkage;
+use Lemon\JsonApi\Document\Resource\Relationship\Relationship;
 use Lemon\JsonApi\Document\Resource\ResourceIdentifier;
 use Lemon\JsonApi\Document\Resource\ResourceObject;
-use Lemon\JsonApi\Document;
 
 include_once 'vendor/autoload.php';
 
@@ -77,12 +73,12 @@ Output:
 }
 ```
 
-Changelog
----
+## Changelog
+
 See all change logs in [CHANGELOG.md][changelog]
 
-Contributing
----
+## Contributing
+
 All code contributions must go through a pull request and approved by
 a core developer before being merged. This is to ensure proper review of all the code.
 
@@ -92,8 +88,8 @@ To ensure a consistent code base, you should make sure the code follows the [PSR
 
 If you would like to help take a look at the [list of issues][issues].
 
-License
----
+## License
+
 This project is released under the MIT License.   
 Copyright © 2017 LemonPHP Team.
 
