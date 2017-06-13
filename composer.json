@@ -1,0 +1,40 @@
+{
+  "name": "lemonphp/json-api",
+  "description": "A PHP7 implement of JSON API specification",
+  "keywords": ["json-api", "api"],
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://github.com/lemonphp/json-api",
+  "support": {
+    "issues": "https://github.com/lemonphp/json-api/issues",
+    "source": "https://github.com/lemonphp/json-api"
+  },
+  "authors": [
+    {
+      "name": "Oanh Nguyen",
+      "email": "oanhnn.bk@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~6.0",
+    "squizlabs/php_codesniffer": "^3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Lemon\\JsonApi\\": "src/"
+    }
+  },
+  "scripts": {
+    "phpunit": "php vendor/phpunit/phpunit/phpunit --coverage-html build/",
+    "phpcs": "php vendor/squizlabs/php_codesniffer/bin/phpcs",
+    "phpcbf": "php vendor/squizlabs/php_codesniffer/bin/phpcbf"
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}
