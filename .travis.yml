@@ -6,16 +6,22 @@ php:
 
 sudo: false
 
+#env:
+#  global:
+#    - CODECLIMATE_REPO_TOKEN=<token>
+
 before_install:
   - composer self-update
 
 install:
   - composer install
-  - composer require satooshi/php-coveralls:~1.0
 
 script:
   - php vendor/bin/phpcs
   - php vendor/bin/phpunit --coverage-clover build/logs/clover.xml
 
 after_script:
+  - composer require satooshi/php-coveralls --dev
   - php vendor/bin/coveralls -v
+#  - composer require codeclimate/php-test-reporter --dev
+#  - php vendor/bin/test-reporter

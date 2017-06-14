@@ -21,7 +21,7 @@ class Utility
      * @param array $array
      * @return object
      */
-    public static function arrayFilter(array $array)
+    final public static function arrayFilter(array $array)
     {
         return (object) array_filter($array, function ($v) {
             return null !== $v;

@@ -58,7 +58,7 @@ class Document implements JsonSerializable
     /**
      * @var bool
      */
-    private $is_sparse = false;
+    private $isSparse = false;
 
     /**
      * Prevents create object by "new" keyword.
@@ -155,7 +155,7 @@ class Document implements JsonSerializable
      */
     public function markSparse()
     {
-        $this->is_sparse = true;
+        $this->isSparse = true;
     }
 
     /**
@@ -165,7 +165,7 @@ class Document implements JsonSerializable
      */
     private function enforceFullLinkage()
     {
-        if ($this->is_sparse || empty($this->included)) {
+        if ($this->isSparse || empty($this->included)) {
             return;
         }
         foreach ($this->included as $includedResource) {

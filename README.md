@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/lemonphp/json-api.svg?branch=master)](https://travis-ci.org/lemonphp/json-api)
 [![Coverage Status](https://coveralls.io/repos/github/lemonphp/json-api/badge.svg?branch=master)](https://coveralls.io/github/lemonphp/json-api?branch=master)
+[![Code Climate](https://codeclimate.com/github/lemonphp/json-api/badges/gpa.svg)](https://codeclimate.com/github/lemonphp/json-api)
+[![Issue Count](https://codeclimate.com/github/lemonphp/json-api/badges/issue_count.svg)](https://codeclimate.com/github/lemonphp/json-api)
 
 A PHP7 implement of [JSON API specification](http://jsonapi.org/)
 
