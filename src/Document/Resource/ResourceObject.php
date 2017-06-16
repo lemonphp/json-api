@@ -38,6 +38,8 @@ final class ResourceObject extends ResourceIdentifier
     /**
      * @param string $name
      * @param mixed  $value
+     * @throws InvalidArgumentException
+     * @throws LogicException
      */
     public function setAttribute(string $name, $value)
     {
@@ -55,6 +57,7 @@ final class ResourceObject extends ResourceIdentifier
     /**
      * @param string        $name
      * @param Relationship  $relationship
+     * @throws LogicException
      */
     public function setRelationship(string $name, Relationship $relationship)
     {

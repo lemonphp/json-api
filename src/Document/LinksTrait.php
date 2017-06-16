@@ -23,8 +23,8 @@ trait LinksTrait
     protected $links;
 
     /**
-     * @param string $name
-     * @param string $value
+     * @param string          $name
+     * @param string          $value
      * @param Meta|array|null $meta
      */
     public function setLink(string $name, string $value, $meta = null)

@@ -1,11 +1,14 @@
 <?php
-/*
- * This file is part of `lemonphp/json-api` project.
+/**
+ * ResourceFireldsTest.php
  *
- * (c) 2017 LemonPHP Team
+ * This source file is part of `lemonphp/json-api` project.
+ * It subject to the MIT license that is bundled with this source code in the file LICENSE.
  *
- * This source file is subject to the MIT license that is bundled
- * with this source code in the file LICENSE.
+ * @author    Oanh Nguyen <oanhnn.bk@gmail.com>
+ * @copyright 2017 LemonPHP Team
+ * @license   MIT
+ * @see       https://github.com/lemonphp/json-api
  */
 
 namespace Lemon\JsonApi\Tests\Document\Resource;
