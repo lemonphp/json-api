@@ -111,6 +111,24 @@ class DocumentTest extends TestCase
         );
     }
 
+    public function testDocumentMayResetVersion()
+    {
+        $doc = $this->createNullDoc();
+        $doc->setApiMeta(['a' => 'b']);
+        $doc->setApiVersion('1.2.3');
+
+        $this->assertEqualsAsJson(
+            [
+                'data' => null,
+                'jsonapi' => [
+                    'version' => '1.2.3',
+                    'meta' => ['a' => 'b'],
+                ],
+            ],
+            $doc
+        );
+    }
+
     public function testDocumentMayContainLinks()
     {
         $doc = $this->createNullDoc();

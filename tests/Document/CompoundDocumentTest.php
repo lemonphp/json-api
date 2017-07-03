@@ -55,7 +55,7 @@ class CompoundDocumentTest extends TestCase
                 )
             )
         );
-        $doc = \Lemon\JsonApi\Document::fromResource($basket);
+        $doc = Document::fromResource($basket);
         $doc->setIncluded($apple, $orange);
         $this->assertEquals(
             [
